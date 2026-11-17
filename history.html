@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scan history | MediVision AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="history" data-auth="1">
+<div id="nav"></div>
+<main class="wrap" id="app">
+
+<h1>Scan history</h1>
+<div class="card">
+<div class="row">
+<div><label for="q">Search patient or file name</label><input id="q" type="search"></div>
+<div><label for="mod">Scan type</label><select id="mod"><option value="">All</option><option>X-ray</option><option>CT</option><option>MRI</option></select></div>
+<div><label for="res">Result</label><select id="res"><option value="">All</option><option>Normal</option><option>Abnormal</option></select></div>
+</div>
+<div class="tablewrap" style="margin-top:1rem"><table><thead><tr><th>Date</th><th>Type</th><th>Patient</th><th>Result</th><th>Confidence</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
+</div>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

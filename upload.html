@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Upload | MediVision AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="upload" data-auth="1">
+<div id="nav"></div>
+<main class="wrap" id="app">
+
+<h1>Upload a medical image</h1>
+<div class="card"><form id="form">
+<label for="file">Image (JPEG, PNG or WebP, up to 10 MB)</label>
+<input id="file" name="image" type="file" accept="image/jpeg,image/png,image/webp" required>
+<div id="preview" style="margin-top:.75rem"></div>
+<div class="row">
+<div><label for="modality">Scan type</label><select id="modality" name="modality"><option>X-ray</option><option>CT</option><option>MRI</option></select></div>
+<div><label for="patient">Patient (optional)</label><select id="patient" name="patientId"><option value="">No patient</option></select></div>
+</div>
+<button class="btn" type="submit">Analyze image</button><p class="msg" role="status"></p>
+</form></div>
+<p class="disclaimer">Only upload images you are allowed to share. Remove patient names from the image itself before uploading.</p>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

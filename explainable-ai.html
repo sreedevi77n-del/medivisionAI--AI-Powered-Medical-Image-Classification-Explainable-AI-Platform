@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Explainable AI | MediVision AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="explainable-ai" data-auth="1">
+<div id="nav"></div>
+<main class="wrap" id="app">
+
+<h1>Attention overlay</h1>
+<div id="xai-wrap"><div class="card" id="xai" hidden>
+<div class="pair">
+<figure style="margin:0"><figcaption class="hint">Original</figcaption><canvas id="c-orig"></canvas></figure>
+<figure style="margin:0"><figcaption class="hint">With attention overlay</figcaption><canvas id="c-over"></canvas></figure>
+</div>
+<label for="opacity">Overlay opacity</label><input id="opacity" type="range" min="0" max="1" step="0.05" value="0.6">
+<p class="hint">Red and yellow areas mark regions the model reported as most influential.</p>
+<h2>Ranked regions of influence</h2>
+<div class="tablewrap"><table><thead><tr><th>Rank</th><th>Region</th><th>Influence</th></tr></thead><tbody id="regions"></tbody></table></div>
+<p class="disclaimer">This overlay is drawn from region coordinates returned by the AI model. It is not a validated Grad-CAM explanation.</p>
+</div></div>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

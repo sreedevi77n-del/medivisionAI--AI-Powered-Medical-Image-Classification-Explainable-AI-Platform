@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medical image review | MediVision AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<div id="nav"></div>
+<main class="wrap" id="app">
+
+<section class="hero">
+  <div>
+    <h1>Review medical images with AI that shows its reasoning</h1>
+    <p class="lead">Upload an X-ray, CT or MRI. MediVision AI classifies it, explains its findings in plain language and highlights the regions that drove its decision, so clinicians can review faster and with confidence.</p>
+    <div class="actions"><a class="btn" href="upload.html">Analyze a medical image</a><a class="btn alt" href="signup.html">Create free account</a></div>
+    <ul class="ticks"><li>X-ray, CT and MRI</li><li>Attention heatmaps</li><li>Printable reports</li></ul>
+  </div>
+  <div class="visual"><svg viewBox="0 0 400 340" role="img" aria-label="Chest scan with a highlighted region">
+<defs>
+<radialGradient id="heat"><stop offset="0" stop-color="#ff3b1f" stop-opacity=".85"/><stop offset=".55" stop-color="#ffc400" stop-opacity=".45"/><stop offset="1" stop-color="#ffff00" stop-opacity="0"/></radialGradient>
+<linearGradient id="film" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c3b4f"/><stop offset="1" stop-color="#0a1a28"/></linearGradient>
+</defs>
+<rect width="400" height="340" fill="#06121f"/>
+<rect x="95" y="25" width="210" height="290" rx="10" fill="url(#film)" stroke="#5fd3e6" stroke-opacity=".6"/>
+<path d="M200 55v230" stroke="#cfe9f2" stroke-opacity=".5" stroke-width="10" stroke-linecap="round"/>
+<path d="M190 90C150 85 120 130 122 190c2 50 35 70 68 62z" fill="#9fc3d3" fill-opacity=".28" stroke="#cfe9f2" stroke-opacity=".6"/>
+<path d="M210 90c40-5 70 40 68 100-2 50-35 70-68 62z" fill="#9fc3d3" fill-opacity=".28" stroke="#cfe9f2" stroke-opacity=".6"/>
+<circle cx="160" cy="175" r="62" fill="url(#heat)"/>
+<rect x="108" y="40" width="60" height="4" rx="2" fill="#5fd3e6" fill-opacity=".7"/>
+</svg></div>
+</section>
+<section>
+  <h2>From upload to report in four steps</h2>
+  <ol class="steps">
+    <li><h3>Upload</h3>Add a JPEG, PNG or WebP image up to 10 MB and choose the scan type.</li>
+    <li><h3>Classify</h3>The AI model labels the image Normal or Abnormal with a confidence score.</li>
+    <li><h3>Explain</h3>See the findings, an impression and a ranked list of influential regions.</li>
+    <li><h3>Report</h3>Print the report or save it as a PDF from your browser.</li>
+  </ol>
+  <p class="disclaimer">MediVision AI is an AI-assisted decision-support tool, not a certified diagnostic device. A qualified healthcare professional must review every result.</p>
+</section>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

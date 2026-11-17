@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patients | MediVision AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="patients" data-auth="1">
+<div id="nav"></div>
+<main class="wrap" id="app">
+
+<h1>Patients</h1>
+<div class="card"><h2>Add a patient</h2><form id="form">
+<div class="row">
+<div><label for="name">Name</label><input id="name" name="name" required></div>
+<div><label for="age">Age</label><input id="age" name="age" type="number" min="0" max="120"></div>
+<div><label for="sex">Sex</label><select id="sex" name="sex"><option value="">Not stated</option><option>Female</option><option>Male</option><option>Other</option></select></div>
+<div><label for="mrn">Record number</label><input id="mrn" name="mrn"></div>
+</div>
+<label for="notes">Notes</label><textarea id="notes" name="notes" style="min-height:70px"></textarea>
+<button class="btn" type="submit">Add patient</button><p class="msg" role="status"></p>
+</form></div>
+<div class="card tablewrap"><table><thead><tr><th>Name</th><th>Age</th><th>Sex</th><th>Record no.</th><th>Scans</th><th></th></tr></thead><tbody id="plist"></tbody></table></div>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

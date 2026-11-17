@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profile | MediVision AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="profile" data-auth="1">
+<div id="nav"></div>
+<main class="wrap" id="app">
+
+<h1>Profile</h1>
+<div class="grid cols">
+<div class="card"><h2>Your details</h2><form id="pform">
+<label for="name">Name</label><input id="name" name="name" required>
+<label for="email">Email</label><input id="email" disabled>
+<button class="btn" type="submit">Save changes</button><p class="msg" role="status"></p></form></div>
+<div class="card"><h2>Change password</h2><form id="wform">
+<label for="current">Current password</label><input id="current" name="current" type="password" autocomplete="current-password" required>
+<label for="next">New password</label><input id="next" name="next" type="password" autocomplete="new-password" minlength="8" required>
+<label for="confirm">Confirm new password</label><input id="confirm" name="confirm" type="password" autocomplete="new-password" required>
+<button class="btn" type="submit">Change password</button><p class="msg" role="status"></p></form></div>
+</div>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>
